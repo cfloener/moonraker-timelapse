@@ -26,7 +26,7 @@ SRCDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )"/ && pwd )"
 # Default Parameters
 MOONRAKER_TARGET_DIR="${HOME}/moonraker/moonraker/components"
 SYSTEMDDIR="/etc/systemd/system"
-KLIPPER_CONFIG_DIR="${HOME}/klipper_config"
+KLIPPER_CONFIG_DIR="${HOME}/printer_data"
 FFMPEG_BIN="/usr/bin/ffmpeg"
 
 # Define text colors
@@ -103,7 +103,7 @@ while getopts "c:h" arg; do
                 break
             ;;
             [?]|h)
-                echo -e "\nUsage: ${0} -c /path/to/klipper_config"
+                echo -e "\nUsage: ${0} -c /path/to/printer_data"
                 exit 1
             ;;
         esac
